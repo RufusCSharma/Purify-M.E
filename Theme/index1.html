@@ -19,6 +19,7 @@
 	
 	
 	<link rel="prefetch" href="images/zoom.png">
+
 		
 </head>
 
@@ -82,10 +83,10 @@
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
+	
       <div class="modal-content">
          <div class="modal-header">
-           
+           	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <h4 class="modal-title" id="myModalLabel">
                Sign In - Welcome Back
             </h4>
@@ -97,16 +98,16 @@
 					<div class="form-group">
 							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-								<input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="abc@xyz.com"/>
+								<input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="abc@xyz.com" required />
 							</div>
 					</div>
 					<div class="form-group">
 							<label for="inputPassword" class="col-sm-2 control-label">Password</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password"/>
+								<input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password" required />
 							</div>
 					</div>
-					<h4><a id = "signinpassword" href='#'>Forgot Password123</a></h4>
+					<h4><a id = "signinpassword" href='#'>Forgot Password</a></h4>
 					<div class="modal-footer">	
 						<button type="button" name="signin" id="signin" value="signin" onclick="myFunction()" class="btn btn-primary" class="close" data-dismiss="modal" formmethod="post" formaction="newpage.html">
 						   Sign In
@@ -138,12 +139,8 @@
 			
 		<div class="btn-group">
 		<h3>Who you are?</h3>
-		  <!--<button type="button" class="btn btn-primary" id="individual" name="individual" value="individual" >Individual</button>
-		  <button type="button" class="btn btn-primary" id="organisation" name="organisation" value="organisation">Organization</button> -->
-		<select id="userchoice" name="userchoice" class="form-control">
-			<option value="individual">Individual</option>
-			<option value="organisation">Organisation</option>
-		</select>
+		  <button type="button" class="btn btn-primary" id="individual" name="individual" value="individual" onclick="myChoice()" >Individual</button>
+		  <button type="button" class="btn btn-primary" id="organisation" name="organisation" value="organisation" onclick="myChoice()" >Organization</button>
 		</div>	<div class="form-group">
 
 			<br/>
@@ -181,17 +178,22 @@
 			<label for="inputAddress1" class="col-sm-2 control-label">Address</label>
 			<textarea class="form-control" rows="2" name="inputAddress1" id="inputAddress1"></textarea>
 		</div>
-		<br/>
-		<div id="dropdown">
-		<label>Select your waste</label>
-		<select id="wastechoice" name="wastechoice" class="form-control">
-			<option value="wetwaste">Wet Waste</option>
-			<option value="drywaste">Dry Waste</option>
-			<option value="electronicwaste">Electronic Waste</option>
-			<option value="plasticwaste">Plastic Waste</option>
-			<option value="animalwaste">Animal Waste</option>
-		</select>
+		<br>
+		<div>
+			<label for="userWaste" id="dropdown">What is your waste?</label>
+			<select class="form-control">
+				<option>Wet Waste</option>
+				<option>Dry Waste</option>
+				<option>Electronic Waste</option>
+				<option>Paper Waste</option>
+				<option>Animal Waste</option>
+			</select>
 		</div>
+
+		<div id="comapnychoice">
+		</div>
+		<br/>
+
 		<button type="button" class="btn btn-default" 
                data-dismiss="modal">Close
             </button>
@@ -381,7 +383,7 @@
 					<span class="hover-text font-light ">+918105256913</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
-					<p><a target="_blank" href="http://www.gmail.com"><i class="icon icon-envelope"></i></a></p>
+					<p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
 					<span class="hover-text font-light ">abraar.syed1@gmail.com</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
@@ -389,11 +391,11 @@
 					<span class="hover-text font-light ">Bangalore,India</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
-					<p><a target="_blank" href="http://www.facebook.com/abraar.syed.01"><i class="icon icon-facebook"></i></a></p>
+					<p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
 					<span class="hover-text font-light ">facebook/abraar.syed.01</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
-					<p><a target="_blank" href="http://www.github.com/abraarsyed"><i class="icon icon-github"></i></a></p>
+					<p><a target="_blank" href="#"><i class="icon icon-github"></i></a></p>
 					<span class="hover-text font-light ">github.com/abraarsyed</span></a>
 				</div><!-- /col12 -->
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>

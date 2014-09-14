@@ -179,7 +179,7 @@
 
 		<div class="container">
 			<label for="inputAddress1" class="col-sm-2 control-label">Address</label>
-			<textarea class="form-control" rows="2" name="inputAddress1" id="inputAddress1"></textarea>
+			<textarea class="form-control" rows="6" name="inputAddress1" id="inputAddress1"></textarea>
 		</div>
 		<br/>
 		<div id="dropdown">
