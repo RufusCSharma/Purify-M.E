@@ -4150,6 +4150,9 @@ a.list-group-item.active > .badge,
     background-position: 0 0;
   }
 }
+#dropdown{
+	color:#3071A9;
+}
 
 @-o-keyframes progress-bar-stripes {
   from {

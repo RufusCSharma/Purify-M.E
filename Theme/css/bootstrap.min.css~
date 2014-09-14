@@ -4807,7 +4807,7 @@ td.visible-print {
   }
   tr.hidden-print {
     display: none !important;
-  
+  }
   th.hidden-print,
   td.hidden-print {
     display: none !important;
@@ -4815,5 +4815,4 @@ td.visible-print {
 }
 #signinpassword{
  text-decoration:none;
- font-size:12px;
 }
