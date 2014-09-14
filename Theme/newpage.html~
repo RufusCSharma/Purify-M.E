@@ -49,7 +49,7 @@
 <textarea class="form-control" rows="1" name="searchbar" id="searchbar" placeholder="Say Hello to the World" required></textarea>
 </td>
 <td>
-<i class="icon icon-search"></i>
+<i class="icon icon-search">
 </td>
 <tr>
 
